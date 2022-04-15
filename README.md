@@ -91,7 +91,7 @@ You're ready to use Snakemake (finally)!!
 
 To run the complete pipeline:
 
-- check to set your working directory in this repository (the Snakefile has to be in the root folder)
+- Set your working directory in this repository (the Snakefile has to be in the root folder)
 
 - execute the following line of code in the terminal:
 
