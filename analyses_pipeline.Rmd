@@ -1,0 +1,48 @@
+---
+title: "Analyses lung cancer datasets"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = T)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+## Analyses performed
+
+The analyses performed in this pipeline are:
+
+- Data processing
+
+- Analysis of patients' characteristics
+
+- Survival analysis
+
+### Data processing
+
+In this step, we adjusted some varaibles that did not have the correct format to start the analyses.
+In particular, we adjused `age` and `sex` variables:
+
+- `age`: missing values were indicated as `-`; these were transformed into `NA` values
+
+- `sex`: the sex was indicated both with character values (`Male`, `Female`) and with numeric values (`1`,`2`), the latter were transformed into character values (`1 = Male`, `2 = Female`).
+
+### Analysis of patients' characteristics
+
+Here, we calculated patients' statistics for each given variable.
+The results are reported below:
+
+```{r, out.width = "100%", out.height="300px"}
+list_patients_info_files <- snakemake@input[['patients_info']]
+knitr::include_graphics(normalizePath(list_patients_info_files), error=F)
+```
+
+### Survival analysis
+
+Here, we performed survival analysis without stratification and with data stratified by `sex`.
+The results are reported below:
+
+```{r, out.width = "100%", out.height="400px"}
+list_surv_analysis_files <- snakemake@input[['surv_analysis']]
+knitr::include_graphics(normalizePath(list_surv_analysis_files), error=F)
+```
