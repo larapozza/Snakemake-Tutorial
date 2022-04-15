@@ -64,7 +64,7 @@ In the browser’s address bar, prefix the entire URL with `gitpod.io/#` and pre
 - Chrome: https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki
 
 - Firefox: https://addons.mozilla.org/en-US/firefox/addon/gitpod/
--
+
 After the installation, you’ll find a green button ‘Gitpod’ in the repository, press it to start Gitpod).
 
 #### Install Miniconda
