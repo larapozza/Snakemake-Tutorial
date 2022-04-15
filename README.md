@@ -71,7 +71,9 @@ After the installation, you’ll find a green button ‘Gitpod’ in the reposit
 
 - Open the terminal in Gitpod
 
-- Run in the terminal: ```bash Miniconda3-latest-Linux-x86_64.sh```
+- Run in the terminal: ```
+bash Miniconda3-latest-Linux-x86_64.sh
+```
 
 - Accept default settings, etc. by pressing `ENTER` or typing `yes`
 
@@ -89,7 +91,7 @@ conda env create -f snakemake.yaml
 
 Run in the terminal: 
 
-``
+```
 conda activate snakemake
 ```
 
