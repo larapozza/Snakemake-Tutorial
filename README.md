@@ -26,38 +26,66 @@ The input data, the packages and the code used to run the pipeline are listed be
 ## Project structure
 
 ```
-├── README.md                       <- This file, basic overview of the project.
+├── README.md                             <- This file, basic overview of the project.
 │
-├── data                            <- Datasets.
+├── Miniconda3-latest-Linux-x86_64.sh     <- File to install Miniconda.
 │
-├── src/                            <- Source code.
-│   ├── analyses_pipeline.Rmd       <- Rmd file showing analyses performed.
-│   ├── patients_info.R             <- Script to obtain patients information.
-│   ├── processing.R                <- Script to process datasets.
-│   └── survival_analysis           <- Script to perform survival analysis.
+├── data                                  <- Datasets.
 │
-├── preprocessed_files/             <- Intermediate folder produced by Snakemake, containing processed datasets (not tracked by git).
+├── src/                                  <- Source code.
+│   ├── analyses_pipeline.Rmd             <- Rmd file showing analyses performed.
+│   ├── patients_info.R                   <- Script to obtain patients information.
+│   ├── processing.R                      <- Script to process datasets.
+│   └── survival_analysis                 <- Script to perform survival analysis.
 │
-├── output/                         <- Output folder produced by Snakemake (not tracked by git).
-│   ├── patients_info/              <- Folder with patients information files (not tracked by git).
-│   ├── reports/                    <- Folder with html reports (not tracked by git).
-│   └── survival_analysis/          <- Folder with survival analysis files (not tracked by git).
+├── preprocessed_files/                   <- Intermediate folder produced by Snakemake, containing processed datasets (not tracked by git).
 │
-├── Snakefile                       <- Rules for the Snakemake workflow managament system.
-├── config.yaml                     <- Snakemake configuration file.
-└── snakemake.yaml                  <- Required packages.
+├── output/                               <- Output folder produced by Snakemake (not tracked by git).
+│   ├── patients_info/                    <- Folder with patients information files (not tracked by git).
+│   ├── reports/                          <- Folder with html reports (not tracked by git).
+│   └── survival_analysis/                <- Folder with survival analysis files (not tracked by git).
+│
+├── Snakefile                             <- Rules for the Snakemake workflow managament system.
+├── config.yaml                           <- Snakemake configuration file.
+└── snakemake.yaml                        <- Required packages.
 
 ```
 
 ## Run the pipeline
 
-### Installing required packages
+We will run this tutorial on Gitpod and we will also need to install conda to allow using a conda envirnoment (containng the packages used in the pipeline).
 
-As first step, the required packages, listed in snakemake.yml, can be installed by installing a conda environment from the terminal (to do so, conda has to be previously installed).
+### Setting up
 
-```
-conda env create -f snakemake.yml
-```
+#### Start Gitpod
+
+In the browser’s address bar, prefix the entire URL with `gitpod.io/#` and press `ENTER` (another option is to install Gitpod browser extension:
+
+- Chrome: https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki
+
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/gitpod/
+-
+After the installation, you’ll find a green button ‘Gitpod’ in the repository, press it to start Gitpod).
+
+#### Install Miniconda
+
+- Open the terminal in Gitpod
+
+- Run: `bash Miniconda3-latest-Linux-x86_64.sh`
+
+- Accept default settings, etc. by pressing `ENTER` or typing `yes`
+
+- Close the terminal and open a new one
+
+#### Install conda environment
+
+Run : `conda env create -f snakemake.yml`
+
+#### Activate conda environmnet
+
+Run: `conda activate snakemake`
+
+You're ready to use Snakemake (finally)!!
 
 ### Run Snakemake
 
