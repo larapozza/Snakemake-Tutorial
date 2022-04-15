@@ -79,7 +79,7 @@ After the installation, you’ll find a green button ‘Gitpod’ in the reposit
 
 #### Install conda environment
 
-Run : `conda env create -f snakemake.yml`
+Run : `conda env create -f snakemake.yaml`
 
 #### Activate conda environmnet
 
