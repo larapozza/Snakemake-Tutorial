@@ -71,7 +71,9 @@ After the installation, you’ll find a green button ‘Gitpod’ in the reposit
 
 - Open the terminal in Gitpod
 
-- Run in the terminal: ```
+- Run in the terminal: 
+
+```
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
