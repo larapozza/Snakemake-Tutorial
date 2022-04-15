@@ -81,13 +81,17 @@ After the installation, you’ll find a green button ‘Gitpod’ in the reposit
 
 Run in the terminal: 
 
-```conda env create -f snakemake.yaml```
+```
+conda env create -f snakemake.yaml
+```
 
 #### Activate conda environmnet
 
 Run in the terminal: 
 
-```conda activate snakemake```
+``
+conda activate snakemake
+```
 
 You're ready to use Snakemake (finally)!!
 
