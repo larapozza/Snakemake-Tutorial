@@ -1,0 +1,7 @@
+dataset:
+  - lungDataset1
+  - lungDataset2
+
+stratification:
+  - sexStratif
+  - noStratif
