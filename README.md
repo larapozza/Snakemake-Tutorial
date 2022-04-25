@@ -59,7 +59,7 @@ We will run this tutorial on Gitpod and we will also need to install conda to al
 
 #### Start Gitpod
 
-In the browser’s address bar, prefix the entire URL with `gitpod.io/#` and press `ENTER` (another option is to install Gitpod browser extension:
+In the browser’s address bar (of this repository), prefix the entire URL with `gitpod.io/#` and press `ENTER` (another option is to install Gitpod browser extension:
 
 - Chrome: https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki
 
