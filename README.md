@@ -89,7 +89,7 @@ Run in the terminal:
 conda env create -f snakemake.yaml
 ```
 
-#### Activate conda environmnet
+#### Activate conda environment
 
 Run in the terminal: 
 
