@@ -4,7 +4,8 @@ configfile : 'config.yaml'
 
 rule all:
   input:
-    'output/reports/analyses_lung_cancer.html'
+    'processed_files/lungDataset1.csv',
+    'processed_files/lungDataset1.csv'
 
 #------ Data Processing ------#
 
