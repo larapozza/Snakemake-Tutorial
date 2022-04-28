@@ -5,7 +5,7 @@ configfile : 'config.yaml'
 rule all:
   input:
     'processed_files/lungDataset1.csv',
-    'processed_files/lungDataset1.csv'
+    'processed_files/lungDataset2.csv'
 
 #------ Data Processing ------#
 
