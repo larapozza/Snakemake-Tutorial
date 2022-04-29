@@ -16,8 +16,6 @@ parse.arguments <- function(){
                          help = 'Stratification type.')
   parser <- add_argument(parser, 'km.curves.pdf.fn',
                          help = 'Filename for KM curves output, PDF file.')
-  parser <- add_argument(parser, 'km.curves.rds.fn',
-                         help = 'Filename for KM curves output, rds file.')
   parse_args(parser)
   
 }
@@ -70,9 +68,6 @@ main <- function(){
   pdf(args$km.curves.pdf.fn, width = 8, height = 8, onefile=F)
   print(p)
   dev.off()
-  
-  # Save KM curves in rds file
-  saveRDS(p, args$km.curves.rds.fn)
   
 }
 
