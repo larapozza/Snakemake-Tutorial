@@ -51,7 +51,7 @@ The input data, the packages and the code used to run the pipeline are listed be
 
 ```
 
-## Run the pipeline
+## Run the Tutorial
 
 We will run this tutorial on Gitpod and we will also need to install conda to allow using a conda envirnoment (containng the packages used in the pipeline).
 
@@ -99,15 +99,12 @@ conda activate snakemake
 
 You're ready to use Snakemake (finally)!!
 
-### Run Snakemake
+### Start the tutorial
 
-To run the complete pipeline:
+You can start by looking at the Snakefile and the scripts used in the workflow.
 
-- Set your working directory in this repository (the Snakefile has to be in the root folder)
+Once everything is clear, you can go through the practical part. 
 
-- Run in the terminal: 
+In the Snakefile, you will find multiple `TODO` followed by a number. Follow the numbers and the respective instructions to fill in the Snakefile and run the complete analysis. In the slides you should have all the elements to do so, but let me know if you have any question.
 
-```
-snakemake -c1
-```
-
+Enjoy and good luck!
